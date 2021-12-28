@@ -108,6 +108,8 @@ yarn add --dev @types/jest
  "lib": ["DOM", "ES6"],   
 ```
 
+至此我们的测试开发环境就配置好了，我们就可以高高兴兴地写测试代码了
+
 ### 使用rollup打包库
 
 #### 安装rollup库
