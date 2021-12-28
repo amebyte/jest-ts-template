@@ -10,7 +10,7 @@ npm init -y
 集成typescript
 ```javascript
 yarn add typescript --dev
-npx tsc --init
+npx tsc --init // 创建tsconfig.json配置文件 
 ```
 引入jest
 ```javascript
@@ -27,6 +27,17 @@ yarn add jest @types/jest --dev
     "test": "jest"
   },
 ```
+
+运行测试命令：
+
+```
+yarn test
+```
+
+ ![](./md/01.png)
+
+成功运行了，说明我们的配置是正确的
+
 我们的代码运行在nodeJS环境下，node默认的模块的规范是commonJS，我们使用import的是ES规范，所以使用babel进行转换。
 
 #### 使用 Babel[#](https://jestjs.io/zh-Hans/docs/getting-started#使用-babel)
