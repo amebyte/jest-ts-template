@@ -135,11 +135,11 @@ export default {
         // esm
         {
             format: "cjs",
-            file: "lib/mini-vue.cjs.js"
+            file: "lib/xxx.cjs.js"
         },
         {
             format: "es",
-            file: "lib/mini-vue.esm.js"
+            file: "lib/xxx.esm.js"
         }
     ],
     plugins:[typescript()]
