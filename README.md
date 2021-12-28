@@ -1,34 +1,38 @@
 # Jest + TypeScript 测试环境配置模版
 
-#### 基础集成
+### 基础集成
 
-初始化项目
+#### 初始化项目
 
 ```javascript
 npm init -y
 ```
-集成typescript
+#### 集成typescript
+
 ```javascript
 yarn add typescript --dev
 npx tsc --init // 创建tsconfig.json配置文件 
 ```
-引入jest
+#### 引入jest
+
 ```javascript
 yarn add jest @types/jest --dev
 ```
-在tsconfig.json里配件jest
+#### 在tsconfig.json里配件jest
+
 ```javascript
 // tsconfig.json
 "types": ["jest"], 
 ```
-在package.json的scripts里面配置jest启动脚本命令
+#### 在package.json的scripts里面配置jest启动脚本命令
+
 ```javascript
   "scripts": {
     "test": "jest"
   },
 ```
 
-运行测试命令：
+#### 运行测试命令：
 
 ```
 yarn test
@@ -46,7 +50,7 @@ tsconfig.json
 "noImplicitAny": false,  
 ```
 
-配置ES运行环境
+### 配置ES运行环境
 
 我们的代码运行在nodeJS环境下，node默认的模块的规范是commonJS，我们使用import的是ES规范，所以使用babel进行转换。
 
@@ -106,13 +110,15 @@ yarn add --dev @types/jest
 
 ### 使用rollup打包库
 
-安装rollup库
+#### 安装rollup库
 
 ```javascript
 yarn add rollup --dev
 ```
 
-添加rollup.config.js，注意：rollup天然就支持esm
+#### 添加rollup.config.js
+
+注意：rollup天然就支持esm
 
 ```javascript
 yarn add @rollup/plugin-typescript --dev
@@ -138,7 +144,7 @@ export default {
 }
 ```
 
-配置命令
+#### 配置script命令
 
 ```javascript
 "script":{
@@ -152,7 +158,7 @@ export default {
 "moduleResolution": "node", 
 ```
 
-添加tslib
+#### 添加tslib
 
 ```javascript
 yarn add tslib --dev
