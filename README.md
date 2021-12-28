@@ -38,6 +38,16 @@ yarn test
 
 成功运行了，说明我们的配置是正确的
 
+允许使用any类型
+
+tsconfig.json
+
+```
+"noImplicitAny": false,  
+```
+
+配置ES运行环境
+
 我们的代码运行在nodeJS环境下，node默认的模块的规范是commonJS，我们使用import的是ES规范，所以使用babel进行转换。
 
 #### 使用 Babel[#](https://jestjs.io/zh-Hans/docs/getting-started#使用-babel)
@@ -56,8 +66,6 @@ module.exports = {
 };
 ```
 *Babel的配置取决于具体的项目使用场景* ，可以查阅 [Babel官方文档](https://babeljs.io/docs/en/)来获取更多详细的信息。
-
-
 
 #### 使用 TypeScript
 
