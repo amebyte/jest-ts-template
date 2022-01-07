@@ -1,4 +1,4 @@
-# Jest + TypeScript 测试环境配置模版
+# Jest + TypeScript + Rollup 测试环境配置实践
 
 ### 基础集成
 
